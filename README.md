@@ -63,7 +63,7 @@
 
 | 🚀 Web Application | 🎥 Project Demo |
 |:------------------:|:---------------:|
-| [![Open Web App](https://img.shields.io/badge/🌐%20Launch-Web%20App-00C853?style=for-the-badge)](https://YOUR-STREAMLIT-LINK.streamlit.app) | [![Watch Demo](https://img.shields.io/badge/🎥%20Watch-Demo%20Video-FF0000?style=for-the-badge&logo=youtube)](https://youtu.be/YOUR_VIDEO_LINK) |
+| [![Open Web App](https://img.shields.io/badge/🌐%20Launch-Web%20App-00C853?style=for-the-badge)](https://supervised-learning---smart-outcome-predictor.streamlit.app/) | [![Watch Demo](https://img.shields.io/badge/🎥%20Watch-Demo%20Video-FF0000?style=for-the-badge&logo=youtube)](https://github.com/user-attachments/assets/67dc4471-47f6-4d28-8fbf-98ba420cfaf7) |
 
 </div>
 
@@ -77,7 +77,7 @@
 
 👉 **Click here to use the application**
 
-**https://YOUR-STREAMLIT-LINK.streamlit.app**
+**https://supervised-learning---smart-outcome-predictor.streamlit.app/**
 
 <br>
 
@@ -85,7 +85,11 @@
 
 👉 **Watch the complete project walkthrough**
 
-**https://youtu.be/YOUR_VIDEO_LINK**
+**
+
+https://github.com/user-attachments/assets/6cfd1ccf-6502-4018-a33a-36168d7d616a
+
+**
 
 </div>
 
