@@ -414,7 +414,10 @@ if nav == "🏠 Overview":
 
     st.markdown('<div class="section-head">📌 Data Snapshot</div>', unsafe_allow_html=True)
     st.dataframe(
-        df.head(8).style.background_gradient(cmap="Purples", subset=["final_score","attendance_rate","avg_quiz_score"]),
+        df.head(8).style.format(precision=2).set_properties(
+            subset=["final_score","attendance_rate","avg_quiz_score"],
+            **{"color": "#22d3ee", "font-weight": "600"}
+        ),
         use_container_width=True
     )
 
@@ -590,10 +593,24 @@ elif nav == "🧠 Model Insights":
     y_pred = mods["clf"].predict(X_all)
     report = classification_report(work["completion_status"], y_pred, output_dict=True)
     report_df = pd.DataFrame(report).T.drop(["accuracy"], errors="ignore")
-    st.dataframe(
-        report_df.style.background_gradient(cmap="Purples", subset=["precision","recall","f1-score"]).format("{:.3f}"),
-        use_container_width=True
+
+    def _violet_bar(s):
+        # matplotlib-free "heatmap" using CSS linear-gradient bars, scaled 0-1
+        vmin, vmax = s.min(), s.max()
+        rng = (vmax - vmin) or 1
+        styles = []
+        for v in s:
+            pct = (v - vmin) / rng
+            alpha = 0.12 + 0.55 * pct
+            styles.append(f"background-color: rgba(124,58,237,{alpha:.2f}); color: #f1f5f9;")
+        return styles
+
+    styled = (
+        report_df.style
+        .format("{:.3f}")
+        .apply(_violet_bar, subset=["precision", "recall", "f1-score"])
     )
+    st.dataframe(styled, use_container_width=True)
 
 # ═══════════════════════════════════════════════════════════════════════════════
 #  PAGE 4 — PREDICT
