@@ -55,7 +55,39 @@
 - [📊 Results & Performance](#-results--performance)
 - [🔬 Key Insights](#-key-insights)
 - [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+---
+
+# 🌐 Live Demo
+
+<div align="center">
+
+| 🚀 Web Application | 🎥 Project Demo |
+|:------------------:|:---------------:|
+| [![Open Web App](https://img.shields.io/badge/🌐%20Launch-Web%20App-00C853?style=for-the-badge)](https://YOUR-STREAMLIT-LINK.streamlit.app) | [![Watch Demo](https://img.shields.io/badge/🎥%20Watch-Demo%20Video-FF0000?style=for-the-badge&logo=youtube)](https://youtu.be/YOUR_VIDEO_LINK) |
+
+</div>
+
+---
+
+## 📱 Project Preview
+
+<div align="center">
+
+### 🌐 Live Web Application
+
+👉 **Click here to use the application**
+
+**https://YOUR-STREAMLIT-LINK.streamlit.app**
+
+<br>
+
+### 🎥 Project Demonstration
+
+👉 **Watch the complete project walkthrough**
+
+**https://youtu.be/YOUR_VIDEO_LINK**
+
+</div>
 
 ---
 
